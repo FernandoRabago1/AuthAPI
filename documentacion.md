@@ -1,4 +1,3 @@
-A continuación tienes una **documentación profesional** de tu API, escrita con suficiente detalle y formalidad como para que **ingenieros de Google** o de cualquier gran empresa puedan entender y consumirla de inmediato. Explica la **arquitectura**, los **endpoints**, la **seguridad** (con cookies, Redis y 2FA), y el **flujo** de autenticación y autorización.
 
 ---
 
