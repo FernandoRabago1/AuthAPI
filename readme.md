@@ -22,7 +22,7 @@ Contiene todas las líneas del snippet original, organizado en una estructura mo
 
 ## Bases de datos
 
-postgre
+### POSTGRES
 
 docker run -d \
   --name my-postgres \
@@ -32,7 +32,8 @@ docker run -d \
   -p 5432:5432 \
   postgres
 
-esquema
+Esquema
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
@@ -45,6 +46,6 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT NOW()
   );
 
-Redis
+### Redis
 
 docker run -d --name redis-server -p 6379:6379 redis  
