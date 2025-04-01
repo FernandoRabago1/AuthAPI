@@ -1,0 +1,29 @@
+{
+  "name": "rest_api_auth_nodejs",
+  "version": "1.0.0",
+  "description": "A REST API for authentication and authorization",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.5.0",
+    "ioredis": "^5.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "nedb-promises": "^6.2.3",
+    "node-cache": "^5.1.2",
+    "otplib": "^12.0.1",
+    "pg": "^8.14.1",
+    "qrcode": "^1.5.3",
+    "rate-limit-redis": "^4.2.0",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
