@@ -1,12 +1,22 @@
 const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
+const rateLimit = require('express-rate-limit');
 
 const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
 const config = require('./config/config');
 
 const app = express();
+
+let limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 15, 
+  message: 'Too many requests, please try after 15 minutes.'
+});
+
+app.use('/api/auth/login', limiter);
+app.use('/api/auth/login/2fa', limiter);
 
 app.use(cors({
   origin: config.frontendOrigin,
